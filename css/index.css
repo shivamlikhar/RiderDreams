@@ -1,0 +1,530 @@
+/*----------------------------HEADER CSS--------------------------*/
+header .nav{
+	background-color: #c7d5de;
+	z-index: 9;
+	padding-left: 50px;
+	padding-right: 50px;
+	display: flex;
+	box-shadow: 0px 3px 30px 5px #bed2e0;
+}
+header .nav_top{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+}
+header .logo{
+	float: left;
+	width: 50%;
+}
+header .nav_side{
+	float: right;
+	width: 50%;
+	font-size: 20px;
+	font-family: 'Inconsolata', monospace;
+	padding-top: 50px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+}
+header .nav_side a{
+	text-decoration: none;
+	padding: 15px; 
+	color: #00536b;
+}
+header .nav_side a:hover{
+	color: #ae1d25;
+	transition: all 0.3s ease;
+	text-shadow: 1px 1px #77a8b3;
+	font-weight: bold;
+}
+/*------------------------------MAIN CSS-------------------------------*/
+/* Slideshow container */
+.main{
+	padding-top: 130px;
+	background-image: url(../img/Bike.jpg);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+
+}
+.main .main_containt{
+	margin-top: 100px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.main_containt h2{
+	color: #e9ecf3;
+	font-size: 40px;
+	text-align: center;
+	justify-content: center;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	line-height: 65px;
+	letter-spacing: 13px;
+}
+.main .main_containt span{
+	color: #f2f2f2;
+	font-size: 16px;
+	opacity: 0.9;
+	font-weight: 400;
+	text-align: center;
+	line-height: 40px;
+	letter-spacing: 2px;
+}
+.main .main_containt .btn{
+	padding-left: 15%;
+}
+.main .main_containt .btn button{
+	text-align: center;
+	outline: none;
+	box-shadow: 0px 0.2px 7px 3px #857053;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+	padding: 15px 40px;
+	border-radius: 10px;
+	background-image: url(../img/bg1.png);
+	color: #f5e0c1;
+	/*transition: 1.5s infinites;*/
+	border: 1px solid #857053;
+}
+
+.main .main_containt .btn button:hover{
+	background-image: url(../img/bg2.png);
+	color: #e9ecf3;
+	transition: 1.5s ;
+	transition-delay: 0.5s infinite;
+}
+.product{
+	padding-bottom: 50px;
+}
+.product h2{
+	color: black;
+	font-size: 32px;
+	text-align: center;
+	padding: 20px;
+}
+.product .product_container{
+	display: flex;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.product .product_container .item{
+	width: 33.33%;
+	margin: 10px;
+	height: auto;
+}	
+.product .product_container .item:hover{
+	box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, .15);
+}
+.product .product_container .item .item_img{
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+}
+.product .product_container .item .item_img img{
+	width: 100%;
+	height: 250px;
+}
+.product .product_container .item .item_containt{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.product .product_container .item .item_containt h3{
+	padding: 10px;
+	font-size: 25px;
+	text-align: left;
+	font-family:'Raleway', sans-serif ;
+}
+.product .product_container .item .item_containt p{
+	padding: 10px;
+	font-size: 15px;
+	text-align: left;
+	font-family:'cosmic', sans-serif ;
+}
+.product .product_container .item .item_containt a{
+	text-decoration: none;
+	margin: 50px;
+	padding: 15px 23px;
+	letter-spacing: 1px;
+	background-color: #edebe6;
+	color: Black;
+	font-family:'cosmic', sans-serif ;
+	text-align: center;
+	border: 2px solid white;
+	border-radius: 10px;
+	transition: .5s;
+}
+.product .product_container .item .item_containt a:hover{
+	background-color: #c7d5de;
+	color: #045b72;
+	font-weight: bold;
+	border: none;
+	border-bottom: 4px solid white;
+	transition: 0.5s;
+}
+.product .product_btn{
+	text-align: center;
+	margin-top: 50px;
+}
+.product .product_btn a{
+	text-decoration: none;
+	margin: 50px;
+	padding: 15px 23px;
+	letter-spacing: 1px;
+	background-color: #edebe6;
+	color: Black;
+	font-family:'cosmic', sans-serif ;
+	text-align: center;
+	border: 2px solid white;
+	border-radius: 10px;
+	transition: .5s;
+	margin-bottom: 20px;
+}
+.product .product_btn a:hover{
+	background-color: #c7d5de;
+	color: #045b72;
+	font-weight: bold;
+	border: none;
+	border-bottom: 2px solid white;
+	transition: 0.5s;
+}
+.keypoint{
+	padding: 50px;
+}
+.keypoint h2{
+	color: black;
+	letter-spacing: 2px;
+	font-family: 'Raleway', sans-serif ;
+	font-size: 32px;
+	text-align: center;
+	padding: 10px;
+}
+.keypoint .key_container{
+	display: flex;
+}
+.keypoint .key_container .key_containt{
+	width: 40%;
+	padding: 20px;
+	float: left;
+}
+.keypoint .key_container .key_containt li{
+	list-style: none;
+	margin: 10px;
+	padding: 10px;
+	border-left: 2px solid #fa6600;
+	color: black;
+	font-family: 'cosmic', sans-serif ;
+	box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, .15);
+}
+.keypoint .key_container .key_containt li .effect{
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	color: black;
+}
+.keypoint .key_container .key_containt li a:hover{
+	color: #fa6600;
+}
+.keypoint .key_container .key_img{
+	width: 40%;
+	float: right;
+	margin-left: 100px;
+}
+.keypoint .key_container .key_img img{
+	width: 100%;
+}
+.testi{
+	padding: 10px;
+}
+.testi h2{
+	color: black;
+	letter-spacing: 2px;
+	font-family: 'Raleway', sans-serif ;
+	font-size: 32px;
+	text-align: center;
+	padding: 10px;
+	text-transform: uppercase;
+}
+.testi .testi_container{
+	margin-right: 10px;
+	margin-left: 10px;
+	text-align: center;
+}
+.testi .testi_container .carousel-inner{
+	/*box-shadow: none;*/
+	text-align: center;
+	margin-left:5% ;
+	margin-right:5% ;
+	width: 90%;
+	background-color: white;
+	justify-content: center;
+}
+.testi .testi_container .item{
+	width: 100%;
+	background-color: white;
+	box-shadow: none;
+}
+.testi .testi_container .item .item_img{
+	width: 100%;
+	/*height: 250px;*/
+	text-align: center;
+	overflow: hidden;
+}
+.testi .testi_container .item .item_img img{
+	width: 100%;
+	height: auto;
+	/*height: 100px;*/
+	/*border-radius: 50%;*/
+	/*margin-top: 100px;*/
+}
+.testi .testi_container .item .item_containt{
+	text-align: center;
+}
+.testi .testi_container .item .item_containt h3{
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+	font-family:'Raleway', sans-serif ;
+}
+.testi .testi_container .item .item_containt p{
+	padding: 10px;
+	font-size: 15px;
+	text-align: center;
+	font-family:'cosmic', sans-serif ;
+}
+.video{
+	padding: 50px;
+}
+.video h2{
+	letter-spacing: 2px;
+	font-size: 32px;
+	font-family: 'Raleway', sans-serif ;
+	text-align: center;
+	padding: 10px;
+	text-transform: uppercase;
+}
+.video .video_container{
+	display: flex;
+}
+.video .video_container .review_video{
+	width: 55%;
+	padding: 20px;
+}
+.video .video_container .review_video video{
+	width: 100%;
+	height: auto;
+	border: 4px solid #6c7f90;
+}
+.video .video_container .video_containt{
+	width: 35%;
+	padding: 20px;
+	text-align: right;
+}
+.video .video_container .video_containt h3{
+	font-family: 'Raleway', sans-serif ;
+	font-size: 30px;
+	padding-top: 30px;
+}
+.video .video_container .video_containt p{
+	line-height: 25px;
+	font-family: 'cosmic', sans-serif;
+	font-style: italic;
+	padding-top: 10px;
+}
+.feed{
+	padding: 50px;
+	background-image: url(../img/Bike-bg.jpg);
+	background-size: cover;
+}
+.feed h2{
+	color: black;
+	font-family: 'Raleway', sans-serif ;
+	font-size: 35px;
+	text-align: left;
+	padding: 10px;
+	padding-left: 50px;
+	text-transform: uppercase;
+}
+.feed .feed_form{
+	text-align: left;
+}
+.feed .feed_form form{
+	padding: 20px;
+}
+.feed .feed_form form input{
+	width: 40%;
+	margin: 10px;
+	padding: 10px;
+	outline: none;
+	border: none;
+	padding-left: 30px;
+	border-radius: 10px;
+	text-align: left;
+	font-family:'cosmic', sans-serif ;
+	background-color: #dee6f1;
+}
+.feed .feed_form form textarea{
+	width: 40%;
+	margin: 10px;
+	padding: 10px;
+	outline: none;
+	border: none;
+	padding-left: 30px;
+	border-radius: 10px;
+	font-family:'cosmic', sans-serif ;
+	background-color: #dee6f1;
+}
+.feed .feed_form form button{
+	width: 40%;
+	margin: 10px;
+	padding: 10px;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	letter-spacing: 3px;
+	font-family:'cosmic', sans-serif ;
+	transition: 0.5s;
+	background-color: #e9e8e4;
+}
+.feed .feed_form form button:hover{
+	background-color: #91a7b5;
+	color: white;
+	font-weight: bold;
+	transition: 0.5s;
+}
+
+.about_us{
+	padding: 100px;
+}
+.about_us h2{
+	color: black;
+	font-size: 35px;
+	text-align: center;
+	font-family: cosmic,sans-serif;
+	padding: 10px;
+	text-transform: uppercase;
+}
+.about_us p{
+	padding: 10px;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: justify;
+	font-family: cosmic,sans-serif;
+}
+.contact_container{
+	padding-top: 110px;
+	padding-left: 90px;
+	padding-right: 90px;
+}
+.contact_container h2{
+	color: black;
+	font-size: 35px;
+	text-align: center;
+	font-family: cosmic,sans-serif;
+	padding: 10px;
+	text-transform: uppercase;
+}
+.contact_container .g_map{
+	border: 10px solid grey;
+}
+.contact_container .contact_content{
+	padding: 20px;
+}
+.contact_container .contact_content p{
+	padding: 10px;
+	width: 100%;
+	background-color: #e1e0da;
+	border-radius: 5px;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	font-family: cosmic,sans-serif;
+}
+/*---------------------------- FOOTER CSS ------------------------------------*/
+footer{
+	background-color: #e9e8e4;
+	padding: 50px;
+}
+footer .pages{
+	text-align: center;
+}
+footer .pages h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .pages a{
+	text-decoration: none;
+	margin: 10px;
+	color: black;
+	font-size: 15px;
+	font-family: 'cosmic', sans-serif;
+}
+footer .pages a:hover{
+	color:#6e4909;
+}
+footer .doc{
+	text-align: center;
+}
+footer .doc h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .doc a{
+	text-decoration: none;
+	margin: 10px;
+	color: black;
+	font-size: 15px;
+	font-family: 'cosmic', sans-serif;
+}
+footer .doc a:hover{
+	color:#6e4909;
+}
+footer .social{
+	text-align: center;
+}
+footer .social h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .social a{
+	text-decoration: none;
+	font-size: 25px;
+	color: #055c73;
+	margin: 10px;
+}
+footer .social a:hover{
+	color: black;
+}
+footer .contact{
+	text-align: center;
+}
+footer .contact h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .contact a{
+	font-size: 25px;
+	color: #055c73;
+	margin: 10px;
+}
+footer .contact a:hover{
+	color: black;
+}
+hr{
+	border: 0.2px solid #6d6d69;
+}
+footer p{
+	text-align: center;
+	padding-top: 10px;
+}

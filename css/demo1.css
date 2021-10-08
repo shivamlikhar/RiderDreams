@@ -1,0 +1,132 @@
+/*----------------------------HEADER CSS--------------------------*/
+header .nav{
+	background-color: #fff8ed;
+	z-index: 9;
+	padding-left: 50px;
+	padding-right: 50px;
+	display: flex;
+	box-shadow: 0px 3px 30px 5px #bed2e0;
+}
+header .nav_top{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+}
+header .logo{
+	float: left;
+	width: 50%;
+}
+header .nav_side{
+	float: right;
+	width: 50%;
+	font-size: 20px;
+	font-family: 'Inconsolata', monospace;
+	padding-top: 50px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+}
+header .nav_side a{
+	text-decoration: none;
+	padding: 15px; 
+	color: Black;
+}
+header .nav_side a:hover{
+	color: #ea971c;
+	transition: all 0.3s ease;
+	text-shadow: 1px 1px #77a8b3;
+	font-weight: bold;
+}
+
+
+main{
+	padding-top: 180px;
+}
+
+/*---------------------------- FOOTER CSS ------------------------------------*/
+footer{
+	background-color: #e9e8e4;
+	padding: 50px;
+}
+footer .pages{
+	text-align: center;
+}
+footer .pages h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .pages a{
+	text-decoration: none;
+	margin: 10px;
+	color: black;
+	font-size: 15px;
+	font-family: 'cosmic', sans-serif;
+}
+footer .pages a:hover{
+	color:#6e4909;
+}
+footer .doc{
+	text-align: center;
+}
+footer .doc h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .doc a{
+	text-decoration: none;
+	margin: 10px;
+	color: black;
+	font-size: 15px;
+	font-family: 'cosmic', sans-serif;
+}
+footer .doc a:hover{
+	color:#6e4909;
+}
+footer .social{
+	text-align: center;
+}
+footer .social h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .social a{
+	text-decoration: none;
+	font-size: 25px;
+	color: #055c73;
+	margin: 10px;
+}
+footer .social a:hover{
+	color: black;
+}
+footer .contact{
+	text-align: center;
+}
+footer .contact h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .contact a{
+	font-size: 25px;
+	color: #055c73;
+	margin: 10px;
+}
+footer .contact a:hover{
+	color: black;
+}
+hr{
+	border: 0.2px solid #6d6d69;
+}
+footer p{
+	text-align: center;
+	padding-top: 10px;
+}

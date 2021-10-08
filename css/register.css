@@ -1,0 +1,176 @@
+/*----------------------------HEADER CSS--------------------------*/
+header .nav{
+	background-color: #edebe6;
+	z-index: 9;
+	padding-left: 50px;
+	padding-right: 50px;
+	display: flex;
+	box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, .1);
+}
+header .nav_top{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+}
+header .logo{
+	float: left;
+	width: 60%;
+}
+header .nav_side{
+	float: right;
+	width: 40%;
+	font-size: 20px;
+	font-family: 'Inconsolata', monospace;
+	padding-top: 50px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+}
+header .nav_side a{
+	text-decoration: none;
+	padding: 15px;
+	color: #075d75;
+	border-radius: 15px;
+}
+header .nav_side a:hover{
+	color: #075d75;
+	transition: all 0.5s ease;
+	text-shadow: 1px 1px #77a8b3;
+	font-weight: bold;
+}
+/*------------------------------MAIN CSS-------------------------------*/
+.html_form{
+	padding: 50px;
+	border: 0px solid grey;
+	margin-top: 80px;
+}
+.html_form form{
+	width: 50%;
+	margin: 20px;
+	margin-left: 290px;
+	padding: 20px;
+	/*border-radius: 10px;
+	box-shadow: 1px 3px 1px 3px #ff8f37 ; */
+	text-align: center;
+}
+span{
+	font-size: 10px;
+	font-family: Helvetica;
+}
+.h2{
+	font-size: 35px;
+	font-family: Lisboa;
+	color: #282923;
+}
+input,select{
+	width: 90%;
+	margin: 20px;
+	height: 35px;
+	border: none;
+	border-bottom: 2px solid #282923;
+	outline: none;
+	text-align: center;
+}
+input:focus{
+	background-color: #edebe6;
+}
+.html_form button{
+	font-size: 20px;
+	font-family: Lisboa;
+	font-style: bold;
+	color: #282923;
+	margin: 10px;
+	padding-top: 5px;
+	padding-left: 40px;
+	padding-right: 40px;
+	outline: none;
+	background-color: transparent;
+	border: none;
+}
+/*---------------------------- FOOTER CSS ------------------------------------*/
+footer{
+	background-color: #e9e8e4;
+	padding: 50px;
+}
+footer .pages{
+	text-align: center;
+}
+footer .pages h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .pages a{
+	text-decoration: none;
+	margin: 10px;
+	color: black;
+	font-size: 15px;
+	font-family: 'cosmic', sans-serif;
+}
+footer .pages a:hover{
+	color:#6e4909;
+}
+footer .doc{
+	text-align: center;
+}
+footer .doc h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .doc a{
+	text-decoration: none;
+	margin: 10px;
+	color: black;
+	font-size: 15px;
+	font-family: 'cosmic', sans-serif;
+}
+footer .doc a:hover{
+	color:#6e4909;
+}
+footer .social{
+	text-align: center;
+}
+footer .social h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .social a{
+	text-decoration: none;
+	font-size: 30px;
+	color: #055c73;
+	margin: 10px;
+}
+footer .social a:hover{
+	color: black;
+}
+footer .contact{
+	text-align: center;
+}
+footer .contact h3{
+	color: Black;
+	font-size: 20px;
+	font-family: 'cosmic', sans-serif;
+	padding: 5px;
+}
+footer .contact a{
+	font-size: 30px;
+	color: #055c73;
+	margin: 10px;
+}
+footer .contact a:hover{
+	color: black;
+}
+hr{
+	border: 0.2px solid white;
+}
+footer p{
+	text-align: center;
+	padding-top: 10px;
+}

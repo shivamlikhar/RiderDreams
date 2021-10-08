@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "description" content="This is test">
+        <meta name = "keyword" content="web development">
+        <meta name="viewport" content="width=device-width,inital-sacle=1.0">
+        <title>My Html Page </title>
+        <style>
+            input,button{
+                height: 50px;
+                width: 90%;
+                margin-top: 30px;
+                position: relative;
+                animation-name: starttoend;
+                animation-duration: 1s;
+                animation-delay: 0.1s;
+                animation-iteration-count: inherit;
+                animation-direction: alternate;
+            }
+            @keyframes starttoend{
+                /* from{left:0px; background-color: salmon;}
+                to{right: 500px;} */
+                0%{transform: translate(0px,300px) ; rotate(90deg);background-color:red;}
+                /* 50%{transform: translate(300px,300px); rotate(80deg);background-color:red;} */
+            }
+            body{
+                margin: 0 auto;
+                max-width: 575px;
+                padding: 15px 0px;
+            }
+            input,button{
+                background: lightgreen;
+                color: red;
+                display: flex;
+                align-items: center;
+                border-radius: 25px;
+                text-align: center;
+                outline: none;
+            }
+            input,button{
+                transition-property: inherit;
+                transition-duration: 1s;
+                transation-timing-function:linear;
+            }
+            input,button:hover{
+                background: #007acc;
+                border:1px solid blue;
+                box-shadow: grey;
+            }
+            h2{
+                text-align: center;
+                font-size: 50px;
+                color: darkred;
+            }
+        </style>
+    </head>
+    <body>(
+            <div>
+                <form onclick="return validation()">
+                <h2 clas>L O G I N</h2>
+                <input type="email" id="email" name="" placeholder="EMAIL"><br>
+                <span id="erroremail" style="color:red;"></span>
+                <input type="password" name="" placeholder="Password">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function validation(){
+                var email = document.getElementById(email).value;
+
+                var emailcheck = /^[a-zA-Z_0-9.]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,6}$/
+
+                if (emailcheck.test(email)) {
+                    document.getElementById('erroremail').innerHTML = " ";
+                }else{
+                    document.getElementById('erroremail').innerHTML = "Invalid Email";
+                    return false;
+                }
+            }
+        </script>
+        <!-- <header>
+            <p>This is a header</p>
+        </header>
+        <main>
+            <p>This Is main Part of the body</p>
+        </main>
+        <footer>This is a footer</footer> -->
+    </body>
+</html>

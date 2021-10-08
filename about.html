@@ -1,0 +1,110 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RidersDreams | About</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">   
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap" rel="stylesheet"> 
+    </head>
+    <body class="container-fluid">
+        <header>
+            <div class="nav nav_top">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" width="175px"></a>
+                </div>
+                <div class="nav_side">
+                    <a href="index.html">HOME</a>
+                    <a href="store.html">SHOP</a>
+                    <a href="contact.html">CONTACT</a>
+                    <a href="service.html">SERVICE</a>
+                    <a href="register.html">LOGIN/SING UP</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="about_us">
+            <h2>About Us</h2>
+            <div class="about_content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <hr>
+            <h2>Our Dreams</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="feed">
+            <h2>YOUR FEEDBACK</h2>
+            <div class="feed_form">
+                <form name="submit-feedback" method="POST">
+                    <input type="text" name="Name" placeholder="Name"><br>
+                    <input type="email" name="Email" placeholder="Email ID"><br>
+                    <input type="number" name="Number" placeholder="Contact Number"><br>
+                    <textarea rows="3" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+
+        <!------------------------------- Footer Begains From Here --------------->
+        <footer>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="150px"></a>
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="">SHOP </a>|
+                <a href="index.html">HOME </a>|
+                <a href="about.html">ABOUT </a>|
+                <a href="service">SERVICE </a>|
+                <a href="register.html">LOGIN/SINGUP </a>
+            </div>
+            <div class="doc">
+                <h3>Documents </h3>
+                <a href="">Privacy Policy </a>|
+                <a href="">Terms of Use </a>|
+                <a href="">Refund Policy</a>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/HarleyDavidsonindia/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/harleydavidson/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/hardly-davidson-1121b1150/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/harleydavidson?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://api.whatsApp/send?phone=+917798123367" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="mailto: sivamlikar@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="tel: +917798123367" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; 2021 KING. All rights reverved</p>
+        </footer>   
+        
+        <script type="text/javascript">
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxPj-V6TD03fosnje2PD-c8sWHvBViK7uUqiJdeu2VC2fEf858MNM4Y3Q7FL4_I2Fzh/exec'
+            const form = document.forms['submit-feedback']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for your Feedback..! Hope You Have Great Ride with us..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>

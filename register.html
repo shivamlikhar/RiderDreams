@@ -1,0 +1,123 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/register.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">   
+    </head>
+    <body class="container-fluid">
+        <header>
+            <div class="nav nav_top">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" width="170px"></a>
+                </div>
+                <div class="nav_side">
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="contact.html">CONTACT</a>
+                    <a href="service.html">SERVICE</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div  class="html_form">
+                <form onsubmit="return validation()" name="submit-googlesheet" method="POST">
+                    <h2 class="h2">R E G I S T R A T I O N</h2><br>
+                    <input type="text-center" id="username" name="Name" placeholder="USERNAME">
+                    <span id="errorname" style="color: red;"></span>
+                    <input type="email" id="email" name="Email" placeholder="EMAIL">
+                    <span id="erroremail" style="color: red;"></span>
+                    <input type="number" id="contact" name="Contact" placeholder="CONTACT NUMBER">
+                    <span id="errorcontact" style="color: red;"></span>
+                    <select name="City" required>
+                        <option>SELECT CITY</option>
+                        <option>NAGPUR</option>
+                        <option>MUMBAI</option>
+                        <option>PUNA</option>
+                        <option>HYDERABAD</option>
+                    </select><br>   
+                    <button type="submit">REGISTER</button>
+                    <button type="reset">RESET</button>
+                </form>
+            </div>
+        </main> 
+        <footer>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" width="150px"></a>
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="">SHOP </a>|
+                <a href="about.html">ABOUT </a>|
+                <a href="contact.html">CONTACT </a>|
+                <a href="service.html">SERVICE </a>|
+            </div>
+            <div class="doc">
+                <h3>Documents </h3>
+                <a href="">Privacy Policy </a>|
+                <a href="">Terms of Use </a>|
+                <a href="">Refund Policy</a>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/HarleyDavidsonindia/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/harleydavidson/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/hardly-davidson-1121b1150/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/harleydavidson?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://api.whatsApp/send?phone=+917798123367" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="mailto: sivamlikar@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="tel: +917798123367" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; 2021 KING. All rights reverved</p>
+        </footer>  
+        <script type="text/javascript">
+            function validation(){
+                var username = document.getElementById('username').value;
+                var email = document.getElementById('email').value;
+                var contact = document.getElementById('contact').value;
+
+                var usercheck = /^[A-Za-z]{3,30}$/;
+                var emailcheck = /^[A-Za-z_0-9.]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+                var contactcheck = /^[6789][0-9]{9}$/;
+
+                if (usercheck.test(username)) {
+                    document.getElementById('errorname').innerHTML = " ";
+                }else{
+                    document.getElementById('errorname').innerHTML = "Invalid Name";
+                    return false;
+                }
+                if (emailcheck.test(email)) {
+                    document.getElementById("erroremail").innerHTML = " ";
+                }else{
+                    document.getElementById("erroremail").innerHTML = "Invalid Email";
+                    return false;
+                }
+                if (contactcheck.test(contact)) {
+                    document.getElementById("errorcontact").innerHTML = " ";
+                }else{
+                    document.getElementById("errorcontact").innerHTML = "Invalid contact";
+                    return false;
+                }
+            }
+        </script>
+
+        <script type="text/javascript">
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxrZv5_CXpPIz4J5HGjBu77E8eKbJdx2Cg2CmvUMourD28lHeKFzp-Vovi3HIBGEVcdiw/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+</html>
